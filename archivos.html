@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO AURORA - Archivos Clasificados</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="files-page">
+    <div class="scanlines"></div>
+    <div class="glitch-flicker"></div>
+
+    <header class="top-bar">
+        <span class="logo-text">■ PROYECTO AURORA ■</span>
+        <span class="classification">NIVEL DE CLASIFICACIÓN: SIGMA-4</span>
+        <span class="user-tag">USUARIO: AUTENTICADO</span>
+    </header>
+
+    <main class="files-container">
+        <h1 class="glitch-text" data-text="ARCHIVOS_CLASIFICADOS">ARCHIVOS_CLASIFICADOS</h1>
+        <p class="subtitle">[Documentos recuperados del incidente de 1987]</p>
+
+        <div class="file-grid">
+            <!-- Documento 1 -->
+            <article class="file-card" id="file1">
+                <div class="file-card-header">
+                    <span class="file-icon">📁</span>
+                    <span class="file-name">EXPEDIENTE_001.dat</span>
+                    <span class="file-stamp">TOP SECRET</span>
+                </div>
+                <div class="file-card-body">
+                    <p><strong>ASUNTO:</strong> Señal de radio interestelar detectada en frecuencia 1420 MHz.</p>
+                    <p><strong>FECHA:</strong> 12 de marzo de 1987 - 03:47 UTC</p>
+                    <p><strong>ORIGEN:</strong> Coordenadas celestes AR 19h 23m 58s | DEC +38° 27' 05"</p>
+                    <p class="redacted">[REDACTADO] La señal contenía un patrón repetitivo de 7 pulsos... <span class="hidden-note">la clave es el número 7</span></p>
+                    <p><strong>ESTADO:</strong> <span class="status-active">ACTIVO</span></p>
+                </div>
+            </article>
+
+            <!-- Documento 2 -->
+            <article class="file-card" id="file2">
+                <div class="file-card-header">
+                    <span class="file-icon">📁</span>
+                    <span class="file-name">INFORME_MEDICO_042.txt</span>
+                    <span class="file-stamp">RESTRINGIDO</span>
+                </div>
+                <div class="file-card-body">
+                    <p><strong>PACIENTE:</strong> Dr. Elena Vasquez (Investigadora Principal)</p>
+                    <p><strong>SÍNTOMAS:</strong> Visiones recurrentes, patrones numéricos, insomnio...</p>
+                    <p><strong>NOTAS:</strong> La Dra. Vasquez repetía constantemente: <em>"Ellos hablan en frecuencias, tenemos que escuchar la transmisión en el nodo 7."</em></p>
+                    <p class="redacted">[REDACTADO] Traslado a instalación segura el 05/04/1987.</p>
+                    <p><strong>UBICACIÓN ACTUAL:</strong> <span class="redacted">[DESCONOCIDA]</span></p>
+                </div>
+                <div class="file-card-footer hidden-clue">
+                    <!-- Pista sutil --> 
+                    <span class="dim-text">...busca la transmisión en /transmision...</span>
+                </div>
+            </article>
+
+            <!-- Documento 3 -->
+            <article class="file-card" id="file3">
+                <div class="file-card-header">
+                    <span class="file-icon">📁</span>
+                    <span class="file-name">REGISTRO_SEÑAL_007.raw</span>
+                    <span class="file-stamp">ULTRA SECRETO</span>
+                </div>
+                <div class="file-card-body">
+                    <p><strong>FRECUENCIA:</strong> 7.83 Hz (Resonancia Schumann)</p>
+                    <p><strong>PATRÓN DETECTADO:</strong> Secuencia Fibonacci modulada</p>
+                    <p><strong>MENSAJE DECODIFICADO PARCIALMENTE:</strong></p>
+                    <pre class="coded-message">
+.... . .-.. .-.. --- / -.. . ... -.. . / .-.. .- ... / . ... - .-. . .-.. .-.. .- ...
+                    </pre>
+                    <p class="translation-hint">[Pista: No es código Morse estándar... o sí lo es.]</p>
+                    <p class="tiny-clue">traduce y sabrás hacia dónde ir → HELLO DESDE LAS ESTRELLAS</p>
+                </div>
+            </article>
+
+            <!-- Documento 4 - oculto parcialmente -->
+            <article class="file-card corrupted" id="file4">
+                <div class="file-card-header">
+                    <span class="file-icon">⚠️</span>
+                    <span class="file-name">ARCHIVO_CORRUPTO.bin</span>
+                    <span class="file-stamp">DAÑADO</span>
+                </div>
+                <div class="file-card-body">
+                    <p class="corrupted-text">
+                        01010100 01010010 01000001 01001110 01010011 01001101 01001001 01010011 01001001 01001111 01001110
+                    </p>
+                    <p><strong>METADATO RECUPERADO:</strong> "La respuesta está en la señal. Accede a /transmision para continuar."</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="navigation-hint">
+            <p>▸ 4 documentos encontrados. ¿Qué conexión ves entre ellos?</p>
+            <p class="blink-subtle">_</p>
+        </div>
+    </main>
+
+    <footer class="bottom-bar">
+        <span>PROYECTO AURORA - DIVISIÓN DE ARCHIVOS</span>
+        <span>|</span>
+        <span>PÁGINA 1 DE 1</span>
+        <span>|</span>
+        <span>IMPRESIÓN AUTORIZADA: 2024-11-15</span>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

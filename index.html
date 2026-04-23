@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO AURORA - Acceso Restringido</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="terminal-page">
+    <!-- Scanlines overlay -->
+    <div class="scanlines"></div>
+    <!-- Glitch flicker overlay -->
+    <div class="glitch-flicker"></div>
+
+    <main class="terminal-container">
+        <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">PROYECTO_AURORA_TERMINAL_v2.7</span>
+        </div>
+
+        <div class="terminal-body" id="terminalBody">
+            <div class="terminal-line">
+                <span class="prompt">[SISTEMA]</span> Inicializando protocolo de seguridad...
+            </div>
+            <div class="terminal-line">
+                <span class="prompt">[SISTEMA]</span> Conexión cifrada establecida.
+            </div>
+            <div class="terminal-line">
+                <span class="prompt">[SISTEMA]</span> ADVERTENCIA: Acceso no autorizado será rastreado.
+            </div>
+            <div class="terminal-line blank"></div>
+            <div class="terminal-line typewriter">
+                <span class="prompt warning">[ALERTA]</span> Se requiere autenticación de Nivel 3.
+            </div>
+            <div class="terminal-line blank"></div>
+            <div class="terminal-line">
+                <span class="prompt">USUARIO:</span> invitado_<span class="blink-cursor">█</span>
+            </div>
+            <div class="terminal-line" id="passwordLine">
+                <span class="prompt">CONTRASEÑA:</span>
+                <span id="passwordDisplay"></span><span class="blink-cursor" id="passwordCursor">█</span>
+            </div>
+            <div class="terminal-line blank" id="feedbackLine"></div>
+            <div class="terminal-line dim">
+                <!-- Pista oculta en texto casi invisible -->
+                <span class="hidden-clue">La aurora boreal ilumina el cielo del norte... la clave está en las estrellas.</span>
+            </div>
+        </div>
+
+        <!-- Pista oculta en HTML (visible al inspeccionar código fuente) -->
+        <!-- 
+            ========================================
+            ACCESO NIVEL 3 - CREDENCIALES:
+            USUARIO: invitado
+            CONTRASEÑA: AURORA
+            ========================================
+            Los que miran el código fuente encuentran el camino.
+        -->
+
+        <div class="terminal-footer">
+            <span>CONEXIÓN SEGURA</span>
+            <span class="separator">|</span>
+            <span>NODO: 47.892.113</span>
+            <span class="separator">|</span>
+            <span class="blink">● TRANSMITIENDO</span>
+        </div>
+    </main>
+
+    <div class="easter-egg-hint" id="easterEgg">
+        <!-- Al hacer clic 5 veces en la pantalla revela otra pista -->
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

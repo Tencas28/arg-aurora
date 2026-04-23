@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO AURORA - Transmisión Interceptada</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="transmission-page">
+    <div class="scanlines"></div>
+    <div class="glitch-flicker"></div>
+    <!-- Interferencia visual adicional -->
+    <div class="interference-overlay"></div>
+
+    <main class="transmission-container">
+        <div class="transmission-header">
+            <span class="freq-label">FRECUENCIA: 7.830 Hz</span>
+            <span class="freq-label">SEÑAL: INTERCEPTADA</span>
+            <span class="freq-label">ORIGEN: DESCONOCIDO</span>
+        </div>
+
+        <div class="signal-visualizer" id="signalVis">
+            <canvas id="signalCanvas"></canvas>
+        </div>
+
+        <div class="transmission-content">
+            <h2 class="interference-title">▮▮▮ TRANSMISIÓN ACTIVA ▮▮▮</h2>
+
+            <div class="message-box" id="messageBox">
+                <p class="interference-text">
+                    E̷͜L̶̢L̵̡O̸̧S̷̢ ̶̡E̷͜S̶̢T̵̡Á̷̧N̷̢ ̷̡A̶͜Q̷̢U̶̡Í̷̧
+                </p>
+                <p class="normal-text hidden-message" id="hiddenMessage1">
+                    Hemos estado observando.
+                </p>
+                <p class="interference-text">
+                    L̷a̷ ̷s̷e̷ñ̷a̷l̷ ̷e̷s̷ ̷c̷l̷a̷r̷a̷.̷ ̷E̷l̷ ̷m̷e̷n̷s̷a̷j̷e̷ ̷e̷s̷t̷á̷ ̷o̷c̷u̷l̷t̷o̷.̷
+                </p>
+                <div class="interactive-zone" id="interactiveZone" title="Haz clic aquí para sintonizar">
+                    <span class="tuning-text">[ SINTONIZANDO... TOCA PARA AMPLIFICAR SEÑAL ]</span>
+                    <div class="progress-bar" id="tuningProgress">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="tuning-percentage" id="tuningPercent">0%</span>
+                </div>
+                <p class="hidden-text-final" id="finalReveal">
+                    La verdad está en /final — El Proyecto Aurora no fue un fracaso. Fue un primer contacto.
+                </p>
+            </div>
+
+            <!-- Pista visual: números que parpadean en la pantalla -->
+            <div class="floating-numbers" id="floatingNumbers">
+                <span>7</span><span>.</span><span>8</span><span>3</span><span> </span>
+                <span>H</span><span>z</span>
+            </div>
+
+            <div class="frequency-analyzer">
+                <div class="freq-bar" style="height: 60%"></div>
+                <div class="freq-bar active" style="height: 90%"></div>
+                <div class="freq-bar" style="height: 40%"></div>
+                <div class="freq-bar active" style="height: 95%"></div>
+                <div class="freq-bar" style="height: 55%"></div>
+                <div class="freq-bar active" style="height: 85%"></div>
+                <div class="freq-bar" style="height: 35%"></div>
+                <div class="freq-bar active" style="height: 100%"></div>
+                <div class="freq-bar" style="height: 50%"></div>
+                <div class="freq-bar active" style="height: 75%"></div>
+            </div>
+        </div>
+    </main>
+
+    <div class="clue-corner">
+        <span class="rotating-clue">✦ ESCUCHA LA SEÑAL ✦</span>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
